@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+
+    }
+
+    .smallcnt {
+        height: 100%;
+        width: 100%;
+    }
+
+    .video {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1000;
+       
+        object-fit: cover;
+    }
+
+    .wish {
+        height: 100px;
+        width: 700px;
+        text-align: center;
+        color: white;
+        font-family: "New Amsterdam", sans-serif;
+
+    }
+
+    .wishcnt {
+        height: 100px;
+        position: relative;
+        top: 35%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        word-spacing: 60px;
+        letter-spacing: 5px;
+
+
+    }
+
+    .image {
+        height: 100%;
+        width: 40%;
+        object-fit: cover;
+        z-index: -1000;
+       
+
+    }
+
+    .object {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .wishcnt2 {
+        position: relative;
+        top: -42%;
+        left: 0%;
+        height: 100px;
+        background-color: white;
+        color: rgb(23, 14, 2);
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 40px;
+        width: 70%;
+
+    }
+
+    .wish21 {
+        display: inline;
+        color: black;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        font-family: "Cedarville Cursive", cursive;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    
+</style>
+
+<body>
+    <div class="tmplt"></div>
+
+    <div class="bigcontainer">
+
+        <div class="container one">
+            <div class="smallcnt">
+                <video autoplay muted loop class="video" src="video2.mp4"></video>
+                <div class="wishcnt">
+                    <h1 class="wish">HAPPY BIRTHDAY</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="smallcnt">
+                <div class="object">
+                    <img src="https://i.pinimg.com/736x/24/be/0d/24be0d0f0f2966a4f24e4608a1cb1cdd--robert-downey-jr-nuest-jr.jpg"
+                        alt="" class="image">
+                    <div class="wishcnt2">
+                        <h1 class="wish21">Thanks for being my friend</h1>
+                    </div>
+                    <img src="" alt="" class="imagto">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>

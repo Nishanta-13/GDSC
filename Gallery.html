@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0%;
+        margin: 0;
+    }
+
+    .backgroundimage {
+        background-image: url(https://images.hdqwalls.com/wallpapers/iron-man-come-by-us.jpg);
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+        width: 100vw;
+
+        height: 100vh;
+        z-index: -1000;
+        position: fixed;
+
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        font-family: Helvetica, sans-serif;
+
+    }
+
+
+    .img1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+
+    .img2 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: end;
+    }
+
+    .img3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .img4 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        justify-self: end;
+    }
+
+    .sz {
+        width: 40vw;
+        height: 80vh;
+        margin: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        animation: Showanimation both;
+        animation-timeline: view(70% 5%);
+        
+    }
+
+    @keyframes Showanimation {
+        from {
+            opacity: 0;
+            transform: translateY(200px) scale(0.3);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+    }.t{
+        color: white;
+        font-family: "Edu VIC WA NT Beginner", cursive;
+        font-size: 30px;
+        font-weight: 600;
+        height: fit-content;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0.36);
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        animation: Showanimation both;
+        animation-timeline: view(70% 5%);
+        margin: 10px;
+        padding: 5px;
+
+    }
+
+    .txt1 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        
+    }
+    .txt2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+        align-self: center;
+        
+    }
+    .txt3 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: center;
+        
+    }
+    .txt4 {
+        grid-column: 1/2;
+        grid-row: 4/5;   
+        justify-self: center;
+        align-self: center;
+    }
+  
+</style>
+
+<body>
+    <div class="tmplt"></div>
+    <div class="backgroundimage">
+
+    </div>
+    <div class="gallery">
+        <div class="img1 sz">
+            <img src="https://image.tmdb.org/t/p/original/f9toX5MahujsDZTJoKIa5kzdhAE.jpg" alt="">
+        </div>
+        <div class="txt1 t">
+            “Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday!”
+        </div>
+        <div class="img2 sz">
+            <img src="https://image.tmdb.org/t/p/original/im9SAqJPZKEbVZGmjXuLI4O7RvM.jpg" alt="">
+        </div>
+        <div class="txt2 t">
+            “A wish for you on your birthday, whatever you ask may you receive, whatever you seek may you find, whatever
+            you wish may it be fulfilled on your birthday and always. Happy birthday!”
+        </div>
+        <div class="img3 sz">
+            <img src="https://ia.media-imdb.com/images/M/MV5BMTkzMTA3NzgzMV5BMl5BanBnXkFtZTcwOTc2MDYxOQ@@._V1._SX640_SY944_.jpg"
+                alt="">
+        </div>
+        <div class="txt3 t">
+            “May the joy that you have spread in the past come back to you on this day. Wishing you a very happy
+            birthday!”
+        </div>
+        <div class="img4 sz">
+            <img src="https://www.aceshowbiz.com/images/wennpic/robert-downey-jr-85th-annual-oscars-press-room-01.jpg"
+                alt="">
+        </div>
+        <div class="txt4 t">
+            “Be happy! Today is the day you were brought into this world to be a blessing and inspiration to the people
+            around you! You are a wonderful person! May you be given more birthdays to fulfill all of your dreams!”
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>
