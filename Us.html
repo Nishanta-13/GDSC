@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .background {
+        background-image: url(https://images.hdqwalls.com/wallpapers/4k-iron-man-endgame-2020-xi.jpg);
+        background-size: cover;
+
+        background-position: center;
+
+        background-repeat: no-repeat;
+
+        width: 100vw;
+
+        height: 100vh;
+        z-index: -1000;
+        position: fixed;
+
+
+    }
+
+    .bigcont {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        position: absolute;
+        top: 8vh;
+        margin: auto;
+    }
+
+    .content {
+
+        height: 100vh;
+        width: 100vw;
+        font-family: "Edu VIC WA NT Beginner", cursive;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .head {
+
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+
+
+    }
+
+    .grow {
+        width: 100%;
+
+    }
+
+    .end {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 35px;
+        padding: 10px;
+    }
+
+    .para {
+
+        font-size: 25px;
+    }
+
+
+    .slider {
+        width: 1000px;
+        max-width: 100vw;
+        height: 400px;
+        margin: auto;
+
+        position: relative;
+
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        width: max-content;
+        transition: 1s;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    .list img {
+        width: 1300px;
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .buttons {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .buttons button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff5;
+        color: #fff;
+        border: none;
+        font-family: monospace;
+        font-weight: bold;
+        cursor: pointer;
+
+    }
+
+
+
+
+    li {
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        margin: 20px;
+        border-radius: 20px;
+        transition: 1s;
+
+
+    }
+
+    .active {
+        width: 30px;
+    }
+
+    @media screen and (max-width:768px) {
+        .slider {
+            height: 400px;
+        }
+    }
+
+    .img {
+        width: 1000px;
+        max-width: 100vw;
+        height: 400px;
+        margin: auto;
+
+        position: relative;
+
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .img img {
+        height: 100%;
+        width: 100%;
+    }
+
+    ol {
+        width: 100vw;
+    }
+
+    .supercont {
+        overflow-x: hidden;
+    }.end{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+    }
+</style>
+
+<body>
+    <dic class="supercont">
+        <div class="tmplt"></div>
+        <div class="background">
+        </div>
+        <div class="bigcont">
+            <div class="nox">
+                <div class="head">
+                    <h1 class="heading">All About Our Friendship</h1>
+                </div>
+                <div class="content">
+
+                    <div class="travel">
+                        <h2>We Travelled</h2>
+                        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque dicta id labore
+                            aliquid
+                            unde, similique ipsum inventore tempore officiis repellendus?</p>
+                        <div class="slider">
+                            <div class="list">
+                                <div class="item">
+                                    <img src="https://i.pinimg.com/originals/eb/e1/fb/ebe1fb3ee7ec480b1e287fb6407a3c98.jpg"
+                                        alt="img1">
+                                </div>
+                                <div class="item">
+                                    <img src="https://pixelstalk.net/wp-content/uploads/2016/08/Sunset-Beaches-Backgrounds.jpg"
+                                        alt="img2">
+                                </div>
+                                <div class="item">
+                                    <img src="https://www.state.gov/wp-content/uploads/2019/04/Nepal-2123x1406.jpg"
+                                        alt="img3">
+                                </div>
+                                <div class="item">
+                                    <img src="https://1.bp.blogspot.com/-9hfDeJbIMj8/UUnw39AAWdI/AAAAAAAAChg/ynFJlYH3jv4/s1600/Oberhofen_caste_Switzerland+(16).jpg"
+                                        alt="img4">
+                                </div>
+                                <div class="item">
+                                    <img src="https://www.tripsavvy.com/thmb/p-X8mMAv-vqWct7oosovltQoKZg=/2121x1414/filters:fill(auto,1)/giza-egypt-pyramids-in-sunset-scene--wonders-of-the-world--1085205362-e1d04d7e00e94c4896ca58bed32e5a61.jpg"
+                                        alt="img5">
+                                </div>
+                            </div>
+
+
+                            <div class="buttons">
+                                <button id="prev">
+                                    <</button>
+                                        <button id="next">></button>
+                            </div>
+                            <ul class="dots">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grow">
+                        <div class="nox">
+                            <h2>It Starts growing</h2>
+                            <div class="img">
+                                <img src="https://mediad.publicbroadcasting.net/p/shared/npr/styles/x_large/nprshared/202002/807743138.jpg"
+                                    alt="" class="imgin">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="end">
+
+                        <h2>Can't add everything Inside it
+                        </h2>
+    
+    
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </dic>
+    <script src="function.js"></script>
+</body>
+
+</html>
